@@ -1,0 +1,160 @@
+@import "bourbon/bourbon"
+
+/*Сброс*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, samp, small,
+strike, strong, sub, sup, tt, var, b, i,
+dl, dt, dd, ol, ul, li, fieldset, form,
+label, legend, table, caption, tbody, tfoot,
+thead, tr, th, td, article, aside, canvas,
+details, embed, figure, figcaption, footer,
+header, hgroup, nav, output, ruby, section,
+time, mark, audio, video
+	margin: 0
+	padding: 0
+	border: 0
+	font-size: 100%
+	font: inherit
+	vertical-align: baseline
+	letter-spacing: .5
+
+button, button:active, button:focus,
+input, input:active, input:focus
+	outline: none
+
+ol, ul
+	list-style: none
+
+.hidden
+	display: none
+
+strong, b
+	font-weight: 500
+
+.btn
+	height: 50px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: center
+	align-items: center
+	text-transform: uppercase
+	width: 100%
+	background-color: #0079c2
+	padding: 0 27px
+	font-size: 14px
+	color: #fff
+	font-weight: 500
+	outline none
+	border-radius: 0
+	&:hover
+		color: #fff
+		text-decoration: none
+		outline none
+		background-color: rgba(#0079c2,.79)
+	&:focus
+		box-shadow: none
+	&__icon
+		width: 7px
+		height: 12px
+		display: inline-block
+		margin-left: 11px
+		background-image: url(../img/icons/button-arrow.png)
+		background-size: contain
+		background-repeat: no-repeat
+		background-position: center center
+		margin-top: -2px
+	&-white
+		background-color: transparent
+		border: 1px solid #0079c2
+		color: #0079c2
+		.btn__icon
+			background-image: url(../img/icons/button-arrow-blue.png)
+			margin-top: 0
+		&:hover
+			background-color: transparent
+			opacity: .79
+			color: #0079c2
+.flex
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+
+.h-logo
+	position: relative
+	padding-left: 64px
+	display: block
+	outline: none
+	&::before
+		content: ''
+		width: 56px
+		height: 46px
+		display: block
+		z-index: 1
+		background-image: url(../img/header-logo.png)
+		background-size: contain
+		background-repeat: no-repeat
+		background-position: center center
+		position: absolute
+		left: 0
+		top: 50%
+		margin-top: -23px
+	&__title
+		display: block
+	&__info
+		display: block
+	&:hover
+		text-decoration: none
+
+.owl-nav
+.owl-prev
+	height: 48px
+	width: 24px
+	position: absolute
+	top: 50%
+	left: 26px
+	height: -24px
+	background-image: url(../img/icons/index-slider-arrow.png) !important
+	background-repeat: no-repeat !important
+	background-size: contain !important
+	background-position: center center !important
+	transform: rotate(180deg)
+	-webkit-transform: rotate(180deg)
+.owl-next
+	height: 49px
+	width: 26px
+	position: absolute
+	top: 50%
+	right: 26px
+	height: -24px
+	background-image: url(../img/icons/index-slider-arrow.png) !important
+	z-index: 1
+	background-repeat: no-repeat !important
+	background-size: contain !important
+	background-position: center center !important
+
+.owl-dots
+	position: absolute
+	left: 0
+	right: 0
+	bottom: 24px
+	text-align: center
+	font-size: 0
+.owl-dot
+	display: inline-block
+	width: 13px
+	height: 13px
+	background-color: #b2b7b4 !important
+	border-radius: 50% !important
+	padding: 0
+	border: none
+	margin: 0 3px
+	&.active
+		background-color: #0079c2 !important

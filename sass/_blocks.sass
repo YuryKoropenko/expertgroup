@@ -1,0 +1,82 @@
+@import "bourbon/bourbon"
+@import "sass/_custom"
+
+/*Внешние блоки*/
+
+body
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.25
+	font-family: "HelveticaNeueCyr", sans-serif
+	font-weight: 300
+	overflow-x: hidden
+	background-color: #f3f7fa
+
+.header
+	letter-spacing: .5
+	position: relative
+	z-index: 2
+	&__top
+		background-color: #e1eaf4
+	&__center
+		background-color: #eef4fa
+		padding: 28px 0
+	&__h-phone
+		width: 100%
+		text-align: right
+	&__bottom
+		background-color: rgba(#0079c2, .79)
+	&__h-menu
+		width: 100%
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+
+.page
+	&__p-slider
+		margin-top: -50px
+	&__p-advantages
+		padding-bottom: 17px
+	&__content
+		padding-top: 33px
+	&__p-title
+		background-image: url(../img/icons/tran.png)
+		background-position: left bottom
+		background-repeat: no-repeat
+		padding: 18px
+		position: relative
+		margin-bottom: 22px
+		&::after
+			content: ''
+			height: 1px
+			left: 0
+			right: 0
+			bottom: 0
+			background-color: #cccfd2
+			z-index: -1
+			position: absolute
+	&__p-about
+		padding: 22px 22px 0 22px
+		background-color: #fff
+		p
+			font-size: 15px
+			color: #313131
+			line-height: 24px
+			letter-spacing: .75
+			padding-bottom: 36px
+		img
+			display: block
+			width: 100%
+			height: auto
+	&__p-help
+		padding: 10px
+		background-color: #fff
+	&__p-edcenter
+		background-color: #fff
+	&__p-training
+		background-color: #fff
+		padding: 12px
