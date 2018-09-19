@@ -132,6 +132,7 @@
 			z-index: 1
 		&:hover
 			text-decoration: none
+			color: #2c2c2c
 	&__callback
 		margin-left: 30px
 		display: inline-block
@@ -150,6 +151,7 @@
 			.h-menu__link
 				&::before
 					display: none
+		&-mob
 	&__link
 		display: block
 		font-size: 13px
@@ -172,6 +174,17 @@
 		&:hover
 			color: #fff
 			text-decoration: none
+	&__icon
+		width: 7px
+		height: 12px
+		margin-left: 10px
+		background-image: url(../img/icons/button-arrow.png)
+		background-repeat: no-repeat
+		background-position: center center
+		background-size: contain
+		display: inline-block
+		transform: rotate(90deg)
+		-webkit-transform: rotate(90deg)
 
 .p-slider
 	&__item
@@ -262,6 +275,8 @@
 		resize: none
 		padding: 15px 20px
 		margin-bottom: 14px
+		&:focus
+			outline: none
 	&__submit
 		height: 52px
 		line-height: 51px
@@ -355,6 +370,15 @@
 		color: #313131
 		line-height: 24px
 		letter-spacing: .75
+		p
+			display: block
+			overflow: hidden
+			font-size: 15px
+			line-height: 24px
+			color: #313131
+			line-height: 24px
+			letter-spacing: .75
+			height: 174px
 	&__wrapper
 		padding: 20px 22px
 		border-top: 1px solid #d7d7d7
@@ -436,3 +460,357 @@
 		box-shadow: none
 		cursor: pointer
 		z-index: 1
+
+.p-training
+	&__table
+		padding: 4px
+		-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.23)
+		-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.23)
+		box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.23)
+		margin-top: 18px
+		.row
+			position: relative
+			margin-bottom: 4px
+			&:last-child
+				margin-bottom: 0
+			&::after
+				content: ''
+				left: 15px
+				right: 15px
+				width: auto
+				top: 0
+				z-index: 1
+				bottom: 0
+				height: 100%
+				background-color: #f6f9fc
+				position: absolute
+				display: block
+	&__wptitle
+		height: 53px
+		position: relative
+		z-index: 2
+		max-width: 360px
+		width: 100%
+	&__title
+		position: absolute
+		left: 22px
+		top: 50%
+		transform: translateY(-50%)
+		-webkit-transform: translateY(-50%)
+		right: 15px
+		width: auto
+		font-size: 14px
+		line-height: 18px
+		color: #2b2b2b
+		font-weight: normal
+	&__wpconditions
+		height: 53px
+		position: relative
+		z-index: 2
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+		align-items: center
+	&__conditions
+		display: inline-block
+		padding-left: 38px
+		position: relative
+		font-size: 14px
+		line-height: 18px
+		color: #181818
+		letter-spacing: 0.75
+	&__icon
+		width: 24px
+		height: 24px
+		display: block
+		background-repeat: no-repeat
+		background-position: center center
+		background-size: contain
+		position: absolute
+		left: 0
+		right: 0
+		top: 50%
+		margin-top: -12px
+	&__wpbtn
+		height: 53px
+		position: relative
+		z-index: 2
+		text-align: right
+		padding-right: 7px
+		&::before
+			content: ''
+			width: 1px
+			top: 0
+			bottom: 0
+			background-color: #fff
+			display: block
+			position: absolute
+			height: 100%
+	&__btn
+		display: inline-block
+		width: 100%
+		max-width: 158px
+		height: 40px
+		line-height: 38px
+		text-align: center
+		position: relative
+		top: 50%
+		margin-top: -20px
+	&__wpfulllist
+		padding-top: 12px
+		margin-left: -12px
+		margin-right: -12px
+		width: auto
+		border-top: 1px solid #d7d7d7
+		text-align: right
+		padding-right: 22px
+		padding-left: 22px
+		margin-top: 18px
+	&__fulllist
+		font-size: 16px
+		height: auto
+		padding-right: 0
+		padding-left: 0
+		border: none
+		display: inline-block
+		width: auto
+
+.p-documentation
+	&__fb
+		display: block
+		outline none
+		&:focus
+			outline: none
+	&__img
+		display: block
+		width: 100%
+		height: auto
+	&__title
+		margin-top: 8px
+		display: block
+		font-size: 14px
+		line-height: 18px
+		height: 36px
+		overflow: hidden
+		color: #0079c2
+		text-decoration: none
+		&:hover
+			text-decoration: underline
+			color: #0079c2
+	&__description
+		display: block
+		padding-top: 16px
+		margin-top: 16px
+		border-top: 1px solid #dddddd
+		font-size: 14px
+		color: #292a2a
+		line-height: 18px
+		letter-spacing: normal
+		p
+			display: block
+			margin-bottom: 16px
+			font-size: 14px
+			color: #292a2a
+			line-height: 18px
+			letter-spacing: normal
+			&:last-child
+				margin-bottom: 0
+
+.p-morequestions
+	&__info
+		font-size: 18px
+		color: #292a2a
+		letter-spacing: .75
+		display: block
+	&__number
+		display: inline-block
+		font-size: 28px
+		color: #292a2a
+		letter-spacing: .75
+		font-weight: 500
+		&:hover
+			text-decoration: none
+			color: #292a2a
+	&__form
+		margin-top: 30px
+		.p-slider__textarea
+			height: 114px
+		.p-slider__poli
+			text-align: left
+			margin-right: 30px
+		.p-slider__submit
+			margin-right: 30px
+			width: -webkit-fill-available
+
+.f-logo
+	position: relative
+	padding-left: 64px
+	display: block
+	outline: none
+	line-height: 1
+	&::before
+		content: ''
+		width: 56px
+		height: 46px
+		display: block
+		z-index: 1
+		background-image: url(../img/footer-logo.png)
+		background-size: contain
+		background-repeat: no-repeat
+		background-position: center center
+		position: absolute
+		left: 0
+		top: 50%
+		margin-top: -23px
+	&__title
+		display: block
+		font-weight: 400
+		font-size: 34px
+		letter-spacing: 0.5
+		text-transform: uppercase
+		color: #575757
+		max-width: 100%
+	&__info
+		display: block
+		font-size: 14px
+		color: #fff
+		font-weight: normal
+		padding-top: 8px
+	&:hover
+		text-decoration: none
+
+.f-social
+	font-size: 0
+	margin-left: -5px
+	&__item
+		display: inline-block
+		margin: 0 5px
+	&__link
+		width: 38px
+		height: 38px
+		display: block
+		background-size: 100% 100%
+		background-repeat: no-repeat
+		background-position: center center
+		&:hover
+			text-decoration: none
+
+.f-copy
+	font-weight: normal
+	font-size: 12px
+	letter-spacing: .75
+	color: #fff
+	display: block
+
+.f-nav
+	&__item
+		display: block
+		padding-bottom: 14px
+		&:last-child
+			padding-bottom: 0
+	&__link
+		display: inline-block
+		font-size: 14px
+		color: #fff
+		&:hover
+			text-decoration: underline
+			color: #fff
+.f-addr
+	&__item
+		position: relative
+		padding-left: 35px
+		min-height: 50px
+		margin-bottom: 15px
+		display: block
+		&-addr
+			font-size: 14px
+			color: #fff
+			font-weight: normal
+		&-phone
+			font-size: 18px
+			font-weight: normal
+			color: #fff
+		&-email
+			font-size: 16px
+			color: #19a5f9
+		span
+			font-size: 14px
+			display: inline-block
+			color: #bdbdb8
+			font-weight: normal
+		a
+			font-size: 16px
+			color: #19a5f9
+			&:hover
+				text-decoration: none
+				color: #19a5f9
+	&__icon
+		height: 24px
+		width: 35px
+		position: absolute
+		left: 0
+		display: block
+		top: 2px
+		background-position: 0 0
+		background-repeat: no-repeat
+
+.p-modal
+	padding: 0
+
+.p-path
+	display: block
+	&::before
+		content: ''
+		display: table
+	&::after
+		content: ''
+		display: table
+		clear: both
+	&__link
+		font-size: 14px
+		color: #717171
+		display: block
+		line-height: 19px
+		position: relative
+		text-decoration: underline
+		&:hover
+			color: #717171
+			text-decoration: none
+	&__item
+		padding-left: 24px
+		display: block
+		float: left
+		position: relative
+		&::before
+			content: ''
+			width: 7px
+			height: 12px
+			background-image: url(../img/icons/button-arrow-blue.png)
+			background-repeat: no-repeat
+			background-position: center center
+			background-size: contain
+			display: inline-block
+			position: absolute
+			top: 50%
+			margin-top: -6px
+			left: 10px
+		&:first-child
+			padding-left: 0
+			&::before
+				display: none
+		&-home
+			.p-path__link
+				width: 17px
+				height: 16px
+				display: block
+				background-image: url(../img/icons/home.png)
+				background-size: contain
+				background-position: center center
+		&-last
+			.p-path__link
+				text-decoration: none
+				&:hover
+					text-decoration: none

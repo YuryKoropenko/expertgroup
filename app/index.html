@@ -17,6 +17,7 @@
 	<!-- Styles -->
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="libs/OwlCarousel2/dist/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="libs/fancybox/dist/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="fonts/stylesheet.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
@@ -35,7 +36,7 @@
 						<div class="header__h-nav">
 							<ul class="h-nav">
 								<li class="h-nav__item">
-									<a href="#" class="h-nav__link">
+									<a href="#" class="h-nav__link fb-modal">
 										О компании
 									</a>
 								</li>
@@ -62,7 +63,7 @@
 							</ul>
 						</div>
 						<div class="header__h-online">
-							<a href="#" class="btn h-online">
+							<a href="#online-back" class="btn h-online fb-modal">
 								Онлайн запрос
 							</a>
 						</div>
@@ -73,9 +74,9 @@
 		<div class="header__center">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-8 justify-content-between align-items-center flex">
+					<div class="col-lg-8 col-md-6 col-3 justify-content-between align-items-center flex">
 						<div class="header__h-logo">
-							<a href="#" class="h-logo">
+							<a href="/" class="h-logo">
 								<img src="img/header-logo-text.png" class="h-logo__title">
 								<p class="h-logo__info">
 									Учебный центр и орган по сертификации
@@ -88,7 +89,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-lg-4">
+					<div class="col-lg-4 col-md-6 col-9">
 						<div class="header__h-phone">
 							<div class="h-phone">
 								<span class="h-phone__time">
@@ -97,7 +98,7 @@
 								<a href="tel:74954473737" class="h-phone__number">
 									+7 (495) 447-37-37
 								</a>
-								<a href="#" class="h-phone__callback">
+								<a href="#callback" class="h-phone__callback fb-modal">
 									Заказать обратный звонок
 								</a>
 							</div>
@@ -111,6 +112,10 @@
 				<div class="row">
 					<div class="col-12">
 						<div class="header__h-menu">
+							<a href="#" class="h-menu__btn">
+								Наши услуги
+								<span class="h-menu__icon"></span>
+							</a>
 							<ul class="h-menu">
 								<li class="h-menu__item">
 									<a href="#" class="h-menu__link">
@@ -126,6 +131,29 @@
 									<a href="#" class="h-menu__link">
 										Ростехкомнадзор
 									</a>
+								</li>
+								<li class="h-menu__item h-menu__item-mob">
+									<a href="#" class="h-menu__link">
+										Еще
+										<span class="h-menu__icon"></span>
+									</a>
+									<ul class="h-menu__submenu">
+										<li class="h-menu__item">
+											<a href="#" class="h-menu__link">
+												Неразрушающий контроль
+											</a>
+										</li>
+										<li class="h-menu__item">
+											<a href="#" class="h-menu__link">
+												Сертификация
+											</a>
+										</li>
+										<li class="h-menu__item">
+											<a href="#" class="h-menu__link">
+												СРО
+											</a>
+										</li>
+									</ul>
 								</li>
 								<li class="h-menu__item">
 									<a href="#" class="h-menu__link">
@@ -156,7 +184,7 @@
 					<div class="p-slider__wrapper">
 						<div class="container">
 							<div class="row">
-								<div class="col-lg-7 align-items-center flex">
+								<div class="col-lg-7 col-md-6 align-items-center flex hidden-xs">
 									<div class="p-slider__baner p-slider__baner-left">
 										<h2 class="p-slider__title">
 											РАЗРАБОТКА ПРОЕКТНО-СМЕТНОЙ ДОКУМЕНТАЦИИ (псд)
@@ -170,7 +198,7 @@
 										</a>
 									</div>
 								</div>
-								<div class="col-lg-5 align-items-center justify-content-end flex">
+								<div class="col-lg-5 col-md-6 align-items-center justify-content-end flex">
 									<div class="p-slider__baner p-slider__baner-right">
 										<b class="p-slider__subtitle">
 											Онлайн запрос
@@ -185,7 +213,7 @@
 												<i class="p-slider__icon" style="background-image: url(img/icons/phone.png);"></i>
 											</div>
 											<textarea name="MESSAGE" class="p-slider__textarea" placeholder="Введите сообщение"></textarea>
-											<button class="btn p-slider__submit">
+											<button type="submit" class="btn p-slider__submit">
 												Отправить
 											</button>
 										</form>
@@ -206,7 +234,7 @@
 					<div class="p-slider__wrapper">
 						<div class="container">
 							<div class="row">
-								<div class="col-lg-7 align-items-center flex">
+								<div class="col-lg-7 col-md-6 align-items-center flex hidden-xs align-items-right-xs">
 									<div class="p-slider__baner p-slider__baner-left">
 										<h2 class="p-slider__title">
 											РАЗРАБОТКА ПРОЕКТНО-СМЕТНОЙ ДОКУМЕНТАЦИИ (псд)
@@ -220,7 +248,7 @@
 										</a>
 									</div>
 								</div>
-								<div class="col-lg-5 align-items-center justify-content-end flex">
+								<div class="col-lg-5 col-md-6 align-items-center justify-content-end flex">
 									<div class="p-slider__baner p-slider__baner-right">
 										<b class="p-slider__subtitle">
 											Онлайн запрос
@@ -257,7 +285,7 @@
 		<div class="page__content">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-6">
+					<div class="col-lg-6 col-md-6">
 						<div class="page__p-advantages">
 							<div class="p-advantages">
 								<div class="p-advantages__icon" style="background-image: url(img/icons/prem-1.png);"></div>
@@ -267,7 +295,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-6">
+					<div class="col-lg-6 col-md-6">
 						<div class="page__p-advantages">
 							<div class="p-advantages">
 								<div class="p-advantages__icon" style="background-image: url(img/icons/prem-2.png);"></div>
@@ -277,7 +305,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-6">
+					<div class="col-lg-6 col-md-6">
 						<div class="page__p-advantages">
 							<div class="p-advantages">
 								<div class="p-advantages__icon" style="background-image: url(img/icons/prem-3.png);"></div>
@@ -287,7 +315,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-6">
+					<div class="col-lg-6 col-md-6">
 						<div class="page__p-advantages">
 							<div class="p-advantages">
 								<div class="p-advantages__icon" style="background-image: url(img/icons/prem-4.png);"></div>
@@ -299,7 +327,7 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-lg-8">
+					<div class="col-lg-8 col-md-8">
 						<div class="page__p-title">
 							<b class="p-title">
 								О компании ЭкспертГрупп
@@ -311,20 +339,20 @@
 									Компанией "ЭкспертГрупп" - пройдена аккредитация для выполнения работ, связанных с регистрацией деклараций о соответствии, а так же оформлением сертификатов. Это подтверждается данными из Единого реестра органов по сертификации и лабораторий Таможенного союза. Ознакомьтесь с выданными разрешительными документами и наличием огромного парка оборудования для проведения испытаний. Мы являемся лидерами среди компаний в указанном направлении деятельности. За 20 лет безупречно выполнено более 100 тысяч заказов.
 								</p>
 								<div class="row">
-									<div class="col-lg-4">
+									<div class="col-lg-4 col-md-6 col-6">
 										<img src="img/about-1.jpg" alt="alt">
 									</div>
-									<div class="col-lg-4">
+									<div class="col-lg-4 col-md-6 col-6">
 										<img src="img/about-2.jpg" alt="alt">
 									</div>
-									<div class="col-lg-4">
+									<div class="col-lg-4 hidden-md">
 										<img src="img/about-3.jpg" alt="alt">
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-4">
+					<div class="col-lg-4 col-md-4">
 						<div class="page__p-title">
 							<b class="p-title">
 								Мы поможем
@@ -361,7 +389,7 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-lg-6">
+					<div class="col-lg-6 col-md-6">
 						<div class="page__p-title">
 							<b class="p-title">
 								Наш учебный центр
@@ -369,9 +397,11 @@
 						</div>
 						<div class="page__p-edcenter">
 							<div class="p-edcenter">
-								<p class="p-edcenter__description">
-									Компанией "ЭкспертГрупп" - пройдена аккредитация для выполнения работ, связанных с регистрацией деклараций о соответствии, а так же оформлением сертификатов. Это подтверждается данными из Единого реестра органов по сертификации и лабораторий Таможенного союза. Ознакомьтесь с выданными разрешительными документами и наличием огромного парка оборудования для проведения испытаний. Мы являемся лидерами среди компаний в указанном направлении деятельности. За 20 лет безупречно выполнено более 100 тысяч заказов.
-								</p>
+								<div class="p-edcenter__description">
+									<p>
+										Компанией "ЭкспертГрупп" - пройдена аккредитация для выполнения работ, связанных с регистрацией деклараций о соответствии, а так же оформлением сертификатов. Это подтверждается данными из Единого реестра органов по сертификации и лабораторий Таможенного союза. Ознакомьтесь с выданными разрешительными документами и наличием огромного парка оборудования для проведения испытаний. Мы являемся лидерами среди компаний в указанном направлении деятельности. За 20 лет безупречно выполнено более 100 тысяч заказов.
+									</p>
+								</div>
 								<div class="p-edcenter__wrapper">
 									<a href="#" class="p-edcenter__more">
 										Подробнее<i class="btn__icon"></i>
@@ -380,10 +410,10 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-6">
+					<div class="col-lg-6 col-md-6">
 						<div class="page__p-title">
 							<b class="p-title">
-								Учебные центры-партнеры
+								Учебные <span>центры-партнеры</span>
 							</b>
 						</div>
 						<div class="page__p-edcenter">
@@ -409,18 +439,18 @@
 											<img src="img/part-1.jpg" alt="" class="p-edcenter__img">
 										</a>
 									</li>
-									<li class="p-edcenter__item">
+									<li class="p-edcenter__item hidden-md">
 										<a href="#" class="p-edcenter__link">
 											<img src="img/part-2.jpg" alt="" class="p-edcenter__img">
 										</a>
 									</li>
-									<li class="p-edcenter__item">
+									<li class="p-edcenter__item hidden-md">
 										<a href="#" class="p-edcenter__link">
 											<img src="img/part-3.jpg" alt="" class="p-edcenter__img">
 										</a>
 									</li>
 								</ul>
-								<a href="#" class="btn p-edcenter__btn" style="text-align: right;">
+								<a href="#" class="btn p-edcenter__btn" style="text-align: right; justify-content: flex-end;">
 									Подробнее
 									<i class="btn__icon"></i>
 								</a>
@@ -441,6 +471,285 @@
 									<input type="text" class="p-training__input" placeholder="Введите поисковый запрос">
 									<input type="submit" class="p-training__searchbtn">
 								</div>
+								<div class="p-training__table">
+									<div class="row">
+										<div class="col-lg-6 col-md-5">
+											<div class="p-training__wptitle">
+												<span class="p-training__title">
+													Аппаратчик химводоотчистки
+												</span>
+											</div>
+										</div>
+										<div class="col-lg-3 col-md-4">
+											<div class="p-training__wpconditions">
+												<span class="p-training__conditions">
+													<i class="p-training__icon" style="background-image: url(img/icons/man.png);"></i>
+													Мужской, от 25 лет
+												</span>
+											</div>
+										</div>
+										<div class="col-lg-3 col-md-3">
+											<div class="p-training__wpbtn">
+												<a href="#" class="btn btn-white p-training__btn">
+													Записаться
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-6 col-md-5">
+											<div class="p-training__wptitle">
+												<span class="p-training__title">
+													Газосварщик , Электросварщик ручной сварки, электрогазосварщик
+												</span>
+											</div>
+										</div>
+										<div class="col-lg-3 col-md-4">
+											<div class="p-training__wpconditions">
+												<span class="p-training__conditions">
+													<i class="p-training__icon" style="background-image: url(img/icons/man.png);"></i>
+													Мужской, от 25 лет
+												</span>
+											</div>
+										</div>
+										<div class="col-lg-3 col-md-3">
+											<div class="p-training__wpbtn">
+												<a href="#" class="btn btn-white p-training__btn">
+													Записаться
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-6 col-md-5">
+											<div class="p-training__wptitle">
+												<span class="p-training__title">
+													Аппаратчик химводоотчистки
+												</span>
+											</div>
+										</div>
+										<div class="col-lg-3 col-md-4">
+											<div class="p-training__wpconditions">
+												<span class="p-training__conditions">
+													<i class="p-training__icon" style="background-image: url(img/icons/man.png);"></i>
+													Мужской, от 25 лет
+												</span>
+											</div>
+										</div>
+										<div class="col-lg-3 col-md-3">
+											<div class="p-training__wpbtn">
+												<a href="#" class="btn btn-white p-training__btn">
+													Записаться
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-6 col-md-5">
+											<div class="p-training__wptitle">
+												<span class="p-training__title">
+													Газосварщик , Электросварщик ручной сварки, электрогазосварщик
+												</span>
+											</div>
+										</div>
+										<div class="col-lg-3 col-md-4">
+											<div class="p-training__wpconditions">
+												<span class="p-training__conditions">
+													<i class="p-training__icon" style="background-image: url(img/icons/man.png);"></i>
+													Мужской, от 25 лет
+												</span>
+											</div>
+										</div>
+										<div class="col-lg-3 col-md-3">
+											<div class="p-training__wpbtn">
+												<a href="#" class="btn btn-white p-training__btn">
+													Записаться
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-6 col-md-5">
+											<div class="p-training__wptitle">
+												<span class="p-training__title">
+													Газосварщик , Электросварщик ручной сварки, электрогазосварщик
+												</span>
+											</div>
+										</div>
+										<div class="col-lg-3 col-md-4">
+											<div class="p-training__wpconditions">
+												<span class="p-training__conditions">
+													<i class="p-training__icon" style="background-image: url(img/icons/man.png);"></i>
+													Мужской, от 25 лет
+												</span>
+											</div>
+										</div>
+										<div class="col-lg-3 col-md-3">
+											<div class="p-training__wpbtn">
+												<a href="#" class="btn btn-white p-training__btn">
+													Записаться
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-6 col-md-5">
+											<div class="p-training__wptitle">
+												<span class="p-training__title">
+													Аппаратчик химводоотчистки
+												</span>
+											</div>
+										</div>
+										<div class="col-lg-3 col-md-4">
+											<div class="p-training__wpconditions">
+												<span class="p-training__conditions">
+													<i class="p-training__icon" style="background-image: url(img/icons/man.png);"></i>
+													Мужской, от 25 лет
+												</span>
+											</div>
+										</div>
+										<div class="col-lg-3 col-md-3">
+											<div class="p-training__wpbtn">
+												<a href="#" class="btn btn-white p-training__btn">
+													Записаться
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-6 col-md-5">
+											<div class="p-training__wptitle">
+												<span class="p-training__title">
+													Газосварщик , Электросварщик ручной сварки, электрогазосварщик
+												</span>
+											</div>
+										</div>
+										<div class="col-lg-3 col-md-4">
+											<div class="p-training__wpconditions">
+												<span class="p-training__conditions">
+													<i class="p-training__icon" style="background-image: url(img/icons/man.png);"></i>
+													Мужской, от 25 лет
+												</span>
+											</div>
+										</div>
+										<div class="col-lg-3 col-md-3">
+											<div class="p-training__wpbtn">
+												<a href="#" class="btn btn-white p-training__btn">
+													Записаться
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="p-training__wpfulllist">
+									<a href="#" class="btn btn-white p-training__fulllist">
+										Полный список<i class="btn__icon"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="page__p-title">
+							<b class="p-title">
+								По результатам обучения вы получите следующие документы
+							</b>
+						</div>
+						<div class="page__p-documentation">
+							<div class="p-documentation">
+								<div class="row">
+									<div class="col-lg-3 col-md-4 col-6">
+										<a href="img/saerteficat.png" data-fancybox="images" class="p-documentation__fb">
+											<img src="img/saerteficat.png" alt="alt" class="p-documentation__img">
+										</a>
+										<a href="#" class="p-documentation__title">
+											Сертификат о прохождении курсов повышения валификации
+										</a>
+									</div>
+									<div class="col-lg-3 col-md-4 col-6">
+										<a href="img/saerteficat.png" data-fancybox="images" class="p-documentation__fb">
+											<img src="img/saerteficat.png" alt="alt" class="p-documentation__img">
+										</a>
+										<a href="#" class="p-documentation__title">
+											Сертификат о прохождении курсов повышения валификации
+										</a>
+									</div>
+									<div class="col-lg-3 col-md-4 hidden-xs">
+										<a href="img/saerteficat.png" data-fancybox="images" class="p-documentation__fb">
+											<img src="img/saerteficat.png" alt="alt" class="p-documentation__img">
+										</a>
+										<a href="#" class="p-documentation__title">
+											Сертификат о прохождении курсов повышения валификации
+										</a>
+									</div>
+									<div class="col-lg-3 hidden-md">
+										<a href="img/saerteficat.png" data-fancybox="images" class="p-documentation__fb">
+											<img src="img/saerteficat.png" alt="alt" class="p-documentation__img">
+										</a>
+										<a href="#" class="p-documentation__title">
+											Сертификат о прохождении курсов повышения валификации
+										</a>
+									</div>
+								</div>
+								<div class="p-documentation__description">
+									<p>
+										Наш центр работает по всей России (мы располагаем широкой филиальной сетью, которая позволяет оказывать услуги по всей территории страны) и предоставляет возможность проходить обучение дистанционно без отрыва от производства,очно, с отрывом от производства и с выездом по местонахождению заказчика. Наш преподавательский состав постоянно следит за изменениями в законодательстве, обновляя программы обучения.
+									</p>
+									<p>
+										Наш центр работает по всей России (мы располагаем широкой филиальной сетью, которая позволяет оказывать услуги по всей территории страны) и предоставляет возможность проходить обучение дистанционно без отрыва от производства,очно, с отрывом от производства и с выездом по местонахождению заказчика. Наш преподавательский состав постоянно следит за изменениями в законодательстве, обновляя программы обучения.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="page__p-title">
+							<b class="p-title">
+								Есть вопросы? Проконсультируем!
+							</b>
+						</div>
+						<div class="page__p-morequestions">
+							<div class="p-morequestions">
+								<span class="p-morequestions__info">
+									Напишите нам сообщение или позвоните по телефону:
+								</span>
+								<a href="tel:+74954473737" class="p-morequestions__number">
+									+7 (495) 447-37-37
+								</a>
+								<div class="p-morequestions__form">
+									<form action="">
+										<div class="row">
+											<div class="col-lg-4 col-md-6">
+												<div class="p-slider__inputwp">
+													<input type="text" class="p-slider__input" name="NAME1" placeholder="Ваше имя">
+													<i class="p-slider__icon" style="background-image: url(img/icons/user.png);"></i>
+												</div>
+												<div class="p-slider__inputwp">
+													<input type="text" class="p-slider__input" name="PHONE1" placeholder="Телефон">
+													<i class="p-slider__icon" style="background-image: url(img/icons/phone.png);"></i>
+												</div>
+											</div>
+											<div class="col-lg-4 col-md-6">
+												<textarea name="MESSAGE1" class="p-slider__textarea" placeholder="Введите сообщение"></textarea>
+											</div>
+											<div class="col-lg-4 col-md-12">
+												<button class="btn p-slider__submit">
+													Отправить
+												</button>
+												<p class="p-slider__poli">
+													Нажимая “Отправить!”, вы подтверждаете согласие с нашей
+													<a href="#">
+														Полиикой конфиденциальности
+													</a>
+												</p>
+											</div>
+										</div>
+									</form>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -448,10 +757,255 @@
 			</div>
 		</div>
 	</div>
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-6">
+					<div class="footer__f-logo">
+						<a href="/" class="f-logo">
+							<img src="img/footer-logo-text.png" class="f-logo__title">
+							<p class="f-logo__info">
+								Учебный центр и орган по сертификации
+							</p>
+						</a>
+					</div>
+					<div class="footer__f-social">
+						<ul class="f-social">
+							<li class="f-social__item">
+								<a href="#" class="f-social__link" style="background-image: url(img/icons/social-1.png);"></a>
+							</li>
+							<li class="f-social__item">
+								<a href="#" class="f-social__link" style="background-image: url(img/icons/social-2.png);"></a>
+							</li>
+							<li class="f-social__item">
+								<a href="#" class="f-social__link" style="background-image: url(img/icons/social-3.png);"></a>
+							</li>
+							<li class="f-social__item">
+								<a href="#" class="f-social__link" style="background-image: url(img/icons/social-4.png);"></a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__f-copy">
+						<p class="f-copy">
+							© 2018  ЭкспертГрупп
+						</p>
+					</div>
+					<div class="footer__f-addr visible-md">
+						<ul class="f-addr">
+							<li class="f-addr__item f-addr__item-addr">
+								<i class="f-addr__icon" style="background-image: url(img/icons/footer-addr.png);"></i>
+								<span>Адрес:</span><br>
+								606121 Нижегородская область<br>
+								г. Ворсма ул. Заводская 1
+							</li>
+							<li class="f-addr__item f-addr__item-phone">
+								<i class="f-addr__icon" style="background-image: url(img/icons/phone.png);"></i>
+								<span>Телефон:</span> +7(495) 447-37-37
+							</li>
+							<li class="f-addr__item f-addr__item-email">
+								<i class="f-addr__icon" style="background-image: url(img/icons/footer-mess.png);"></i>
+								<span>E-mail:</span> <a href="mailto:info@expertgroup.ru">info@expertgroup.ru</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-6 col-6">
+					<div class="footer__f-nav">
+						<ul class="f-nav">
+							<li class="f-nav__item">
+								<a href="#" class="f-nav__link">
+									О компании
+								</a>
+							</li>
+							<li class="f-nav__item">
+								<a href="#" class="f-nav__link">
+									Все услуги
+								</a>
+							</li>
+							<li class="f-nav__item">
+								<a href="#" class="f-nav__link">
+									Партнерство
+								</a>
+							</li>
+							<li class="f-nav__item">
+								<a href="#" class="f-nav__link">
+									Законодательство
+								</a>
+							</li>
+							<li class="f-nav__item">
+								<a href="#" class="f-nav__link">
+									Контакты
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__f-nav visible-md hidden-xs">
+						<ul class="f-nav">
+							<li class="f-nav__item">
+								<a href="#" class="f-nav__link">
+									Обучение
+								</a>
+							</li>
+							<li class="f-nav__item">
+								<a href="#" class="f-nav__link">
+									Повышение квалификации
+								</a>
+							</li>
+							<li class="f-nav__item">
+								<a href="#" class="f-nav__link">
+									Ростехкомнадзор
+								</a>
+							</li>
+							<li class="f-nav__item">
+								<a href="#" class="f-nav__link">
+									Неразрушающий контроль
+								</a>
+							</li>
+							<li class="f-nav__item">
+								<a href="#" class="f-nav__link">
+									Сертификация
+								</a>
+							</li>
+							<li class="f-nav__item">
+								<a href="#" class="f-nav__link">
+									СРО
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 hidden-md col-6">
+					<div class="footer__f-nav">
+						<ul class="f-nav">
+							<li class="f-nav__item">
+								<a href="#" class="f-nav__link">
+									Обучение
+								</a>
+							</li>
+							<li class="f-nav__item">
+								<a href="#" class="f-nav__link">
+									Повышение квалификации
+								</a>
+							</li>
+							<li class="f-nav__item">
+								<a href="#" class="f-nav__link">
+									Ростехкомнадзор
+								</a>
+							</li>
+							<li class="f-nav__item">
+								<a href="#" class="f-nav__link">
+									Неразрушающий контроль
+								</a>
+							</li>
+							<li class="f-nav__item">
+								<a href="#" class="f-nav__link">
+									Сертификация
+								</a>
+							</li>
+							<li class="f-nav__item">
+								<a href="#" class="f-nav__link">
+									СРО
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 hidden-md">
+					<div class="footer__f-addr">
+						<ul class="f-addr">
+							<li class="f-addr__item f-addr__item-addr">
+								<i class="f-addr__icon" style="background-image: url(img/icons/footer-addr.png);"></i>
+								<span>Адрес:</span><br>
+								606121 Нижегородская область<br>
+								г. Ворсма ул. Заводская 1
+							</li>
+							<li class="f-addr__item f-addr__item-phone">
+								<i class="f-addr__icon" style="background-image: url(img/icons/phone.png);"></i>
+								<span>Телефон:</span> +7(495) 447-37-37
+							</li>
+							<li class="f-addr__item f-addr__item-email">
+								<i class="f-addr__icon" style="background-image: url(img/icons/footer-mess.png);"></i>
+								<span>E-mail:</span> <a href="mailto:info@expertgroup.ru">info@expertgroup.ru</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!--Модалки-->
+	<div class="p-modal" id="online-back" style="display: none;">
+		<div class="p-slider__baner p-slider__baner-right">
+			<b class="p-slider__subtitle">
+				Онлайн запрос
+			</b>
+			<form action="">
+				<div class="p-slider__inputwp">
+					<input type="text" class="p-slider__input" name="NAME" placeholder="Ваше имя">
+					<i class="p-slider__icon" style="background-image: url(img/icons/user.png);"></i>
+				</div>
+				<div class="p-slider__inputwp">
+					<input type="text" class="p-slider__input" name="PHONE" placeholder="Телефон">
+					<i class="p-slider__icon" style="background-image: url(img/icons/phone.png);"></i>
+				</div>
+				<textarea name="MESSAGE" class="p-slider__textarea" placeholder="Введите сообщение"></textarea>
+				<button class="btn p-slider__submit">
+					Отправить
+				</button>
+			</form>
+			<p class="p-slider__poli">
+				Нажимая “Отправить!”, вы подтверждаете согласие с нашей
+				<br>
+				<a href="#">
+					Полиикой конфиденциальности
+				</a>
+			</p>
+		</div>
+	</div>
+
+	<div class="p-modal" id="callback" style="display: none;">
+		<div class="p-slider__baner p-slider__baner-right">
+			<b class="p-slider__subtitle">
+				Обратный звонок
+			</b>
+			<form action="">
+				<div class="p-slider__inputwp">
+					<input type="text" class="p-slider__input" name="NAME" placeholder="Ваше имя">
+					<i class="p-slider__icon" style="background-image: url(img/icons/user.png);"></i>
+				</div>
+				<div class="p-slider__inputwp">
+					<input type="text" class="p-slider__input" name="PHONE" placeholder="Телефон">
+					<i class="p-slider__icon" style="background-image: url(img/icons/phone.png);"></i>
+				</div>
+				<button class="btn p-slider__submit">
+					Заказать
+				</button>
+			</form>
+			<p class="p-slider__poli">
+				Нажимая “Отправить!”, вы подтверждаете согласие с нашей
+				<br>
+				<a href="#">
+					Полиикой конфиденциальности
+				</a>
+			</p>
+		</div>
+	</div>
+
+	<div class="p-modal" id="ok-form" style="display: none;">
+		<div class="p-slider__baner p-slider__baner-right">
+			<b class="p-slider__subtitle" style="margin-bottom: 0;">
+				Заявка успешно отправленна
+			</b>
+		</div>
+	</div>
+
+	<a href="#ok-form" style="display: none;" class="fb-modal">Ссылка на успешную заявку</a>
 
 	<!-- Scripts -->
 	<script type="text/javascript" src="libs/jquery/jquery.min.js"></script>
 	<script type="text/javascript" src="libs/OwlCarousel2/dist/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="libs/fancybox/dist/jquery.fancybox.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<!-- End_Scripts -->
 </body>
