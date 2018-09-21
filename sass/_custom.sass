@@ -158,3 +158,86 @@ strong, b
 	margin: 0 3px
 	&.active
 		background-color: #0079c2 !important
+
+.ui-selectmenu-button.ui-button
+	width: 100%
+	border-radius: 0
+	box-sizing: border-box
+	font-size: 14px
+	padding: 0
+	line-height: 51px
+	background-color: #fff
+	border: 1px solid #ccc3c3
+	outline: none
+	padding-left: 20px
+	padding-right: 47px
+	font-size: 13.3333px
+	color: rgba(#414141,.8)
+	position: relative
+	margin-bottom: 12px
+	&:active
+		border: 1px solid #ccc3c3
+
+.ui-selectmenu-button.ui-button::after
+	content: ''
+	width: 47px
+	display: block
+	position: absolute
+	right: 0
+	top: 0
+	bottom: 0
+	background-image: url(../img/icons/arrow.png)
+	background-repeat: no-repeat
+	background-position: center center
+	opacity: .4
+
+.ui-selectmenu-button-open.ui-selectmenu-button.ui-button::after
+	transform: rotate(-180deg)
+	-webkit-transform: rotate(-180deg)
+
+.ui-selectmenu-button.ui-button::before
+	content: ''
+	width: 1px
+	background-color: #d1d1d1
+	top: 8px
+	bottom: 8px
+	height: auto
+	position: absolute
+	right: 47px
+
+.p-slider__input
+	color: #414141
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover
+	background-color: #fff
+	outline: none
+	color: rgba(#414141,.8)
+	border: 1px solid #ccc3c3
+
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus, .ui-button:hover, .ui-button:focus
+	background-color: #fff
+	outline: none
+	color: rgba(#414141,.8)
+	border: 1px solid #ccc3c3
+
+.ui-selectmenu-icon
+	display: none !important
+
+.ui-front
+	z-index: 99999
+
+.ui-menu .ui-menu-item-wrapper
+	padding: 0
+	margin: 0
+	line-height: 25px
+	display: block
+	padding-left: 20px
+	padding-right: 20px
+	color: rgba(#414141,.8)
+	font-size: 13.3333px
+	&:hover
+		background-color: #0079c2
+		color: #fff
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover
+	border: none

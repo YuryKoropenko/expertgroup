@@ -65,7 +65,6 @@
   }
   .header__h-menu {
     height: 50px;
-    overflow: hidden;
   }
   .h-menu__link {
     padding: 0 25px;
@@ -336,6 +335,9 @@
   .p-content__onlineinfo span {
     font-size: 18px;
   }
+  .hidden-sm {
+    display: none;
+  }
   /**/
 }
 
@@ -587,6 +589,9 @@
   }
   .visible-md {
     display: none;
+  }
+  .hidden-sm.h-menu__item {
+    display: inline-block;
   }
   /**/
 }

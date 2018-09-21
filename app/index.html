@@ -16,6 +16,7 @@
 
 	<!-- Styles -->
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="libs/jqueryUiCustom/jquery-ui.min.css">
 	<link rel="stylesheet" href="libs/OwlCarousel2/dist/assets/owl.carousel.min.css">
 	<link rel="stylesheet" href="libs/fancybox/dist/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="fonts/stylesheet.css">
@@ -117,17 +118,17 @@
 								<span class="h-menu__icon"></span>
 							</a>
 							<ul class="h-menu">
-								<li class="h-menu__item">
+								<li class="h-menu__item" name="menu1">
 									<a href="#" class="h-menu__link">
 										Обучение
 									</a>
 								</li>
-								<li class="h-menu__item">
+								<li class="h-menu__item" name="menu2">
 									<a href="#" class="h-menu__link">
 										Повышение квалификации
 									</a>
 								</li>
-								<li class="h-menu__item">
+								<li class="h-menu__item" name="menu3">
 									<a href="#" class="h-menu__link">
 										Ростехкомнадзор
 									</a>
@@ -138,39 +139,185 @@
 										<span class="h-menu__icon"></span>
 									</a>
 									<ul class="h-menu__submenu">
-										<li class="h-menu__item">
+										<li class="h-menu__item" name="menu4">
 											<a href="#" class="h-menu__link">
 												Неразрушающий контроль
 											</a>
 										</li>
-										<li class="h-menu__item">
+										<li class="h-menu__item" name="menu5">
 											<a href="#" class="h-menu__link">
 												Сертификация
 											</a>
 										</li>
-										<li class="h-menu__item">
+										<li class="h-menu__item" name="menu6">
 											<a href="#" class="h-menu__link">
 												СРО
 											</a>
 										</li>
 									</ul>
 								</li>
-								<li class="h-menu__item">
+								<li class="h-menu__item hidden-sm visible-xs" name="menu4">
 									<a href="#" class="h-menu__link">
 										Неразрушающий контроль
 									</a>
 								</li>
-								<li class="h-menu__item">
+								<li class="h-menu__item hidden-sm visible-xs" name="menu5">
 									<a href="#" class="h-menu__link">
 										Сертификация
 									</a>
 								</li>
-								<li class="h-menu__item">
+								<li class="h-menu__item hidden-sm visible-xs" name="menu6">
 									<a href="#" class="h-menu__link">
 										СРО
 									</a>
 								</li>
 							</ul>
+							<div class="h-menutoggle">
+								<a href="#" class="h-menutoggle__close">
+									<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+									viewBox="0 0 28 28" xml:space="preserve">
+									<g>
+										<g id="x">
+											<g>
+												<polygon points="28,22.398 19.594,14 28,5.602 22.398,0 14,8.402 5.598,0 0,5.602 8.398,14 0,22.398 
+												5.598,28 14,19.598 22.398,28 			"/>
+											</g>
+										</g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+								</svg>
+							</a>
+								<ul class="h-menutoggle__left">
+									<li class="h-menutoggle__item active" name="menu1">
+										<a href="#" class="h-menutoggle__link">
+											Обучение
+											<span class="h-menutoggle__icon"></span>
+										</a>
+									</li>
+									<li class="h-menutoggle__item" name="menu2">
+										<a href="#" class="h-menutoggle__link">
+											Повышение квалификации
+											<span class="h-menutoggle__icon"></span>
+										</a>
+									</li>
+									<li class="h-menutoggle__item" name="menu3">
+										<a href="#" class="h-menutoggle__link">
+											Ростехкомнадзор
+											<span class="h-menutoggle__icon"></span>
+										</a>
+									</li>
+									<li class="h-menutoggle__item" name="menu4">
+										<a href="#" class="h-menutoggle__link">
+											Неразрушающий контроль
+											<span class="h-menutoggle__icon"></span>
+										</a>
+									</li>
+									<li class="h-menutoggle__item" name="menu5">
+										<a href="#" class="h-menutoggle__link">
+											Сертификация
+											<span class="h-menutoggle__icon"></span>
+										</a>
+									</li>
+									<li class="h-menutoggle__item" name="menu6">
+										<a href="#" class="h-menutoggle__link">
+											СРО
+											<span class="h-menutoggle__icon"></span>
+										</a>
+									</li>
+								</ul>
+								<ul class="h-menutoggle__right h-menutoggle__right-1 menu1" style="display: block;">
+									<li class="h-menutoggle__subitem">
+										<a href="#" class="h-menutoggle__sublink">
+											Экспертиза промышленной безопасности
+										</a>
+									</li>
+									<li class="h-menutoggle__subitem">
+										<a href="#" class="h-menutoggle__sublink">
+											Экспертиза технических устройств
+										</a>
+									</li>
+									<li class="h-menutoggle__subitem">
+										<a href="#" class="h-menutoggle__sublink">
+											Экспертиза проектной документации
+										</a>
+									</li>
+									<li class="h-menutoggle__subitem">
+										<a href="#" class="h-menutoggle__sublink">
+											Экспертиза зданий и сооружений
+										</a>
+									</li>
+									<li class="h-menutoggle__subitem">
+										<a href="#" class="h-menutoggle__sublink">
+											Декларация промышленной безопасности
+										</a>
+									</li>
+								</ul>
+								<ul class="h-menutoggle__right h-menutoggle__right-2 menu2">
+									<li class="h-menutoggle__subitem">
+										<a href="#" class="h-menutoggle__sublink">
+											Обучение1
+										</a>
+									</li>
+									<li class="h-menutoggle__subitem">
+										<a href="#" class="h-menutoggle__sublink">
+											Обучение1
+										</a>
+									</li>
+								</ul>
+								<ul class="h-menutoggle__right h-menutoggle__right-3 menu3">
+									<li class="h-menutoggle__subitem">
+										<a href="#" class="h-menutoggle__sublink">
+											Обучение
+										</a>
+									</li>
+									<li class="h-menutoggle__subitem">
+										<a href="#" class="h-menutoggle__sublink">
+											Обучение
+										</a>
+									</li>
+								</ul>
+								<ul class="h-menutoggle__right h-menutoggle__right-4 menu4">
+									<li class="h-menutoggle__subitem">
+										<a href="#" class="h-menutoggle__sublink">
+											Обучение
+										</a>
+									</li>
+									<li class="h-menutoggle__subitem">
+										<a href="#" class="h-menutoggle__sublink">
+											Обучение
+										</a>
+									</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -942,14 +1089,26 @@
 			</b>
 			<form action="">
 				<div class="p-slider__inputwp">
-					<input type="text" class="p-slider__input" name="NAME" placeholder="Ваше имя">
+					<input type="text" class="p-slider__input" name="NAME" placeholder="ФИО">
 					<i class="p-slider__icon" style="background-image: url(img/icons/user.png);"></i>
+				</div>
+				<div class="p-slider__inputwp">
+					<input type="text" class="p-slider__input" name="EMAIL" placeholder="Электронная почта">
+					<i class="p-slider__icon" style="background-image: url(img/icons/mess.png);"></i>
 				</div>
 				<div class="p-slider__inputwp">
 					<input type="text" class="p-slider__input" name="PHONE" placeholder="Телефон">
 					<i class="p-slider__icon" style="background-image: url(img/icons/phone.png);"></i>
 				</div>
-				<textarea name="MESSAGE" class="p-slider__textarea" placeholder="Введите сообщение"></textarea>
+				<select name="number" id="number">
+					<option selected="selected">Услуга 1</option>
+					<option>Услуга 2</option>
+					<option>Услуга 3</option>
+					<option>Услуга 4</option>
+					<option>Услуга 5</option>
+					<option>Услуга 6</option>
+					<option>Услуга 7</option>
+				</select>
 				<button class="btn p-slider__submit">
 					Отправить
 				</button>
@@ -1004,6 +1163,7 @@
 
 	<!-- Scripts -->
 	<script type="text/javascript" src="libs/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="libs/jqueryUiCustom/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="libs/OwlCarousel2/dist/owl.carousel.min.js"></script>
 	<script type="text/javascript" src="libs/fancybox/dist/jquery.fancybox.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>

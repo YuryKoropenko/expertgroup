@@ -20,6 +20,8 @@ $('.p-sitebarslider').owlCarousel({
 $('.p-documentation__fb').fancybox();
 $('.fb-modal').fancybox();
 
+$('select').selectmenu();
+
 $(function() {
 	var max_col_height = 0; // максимальная высота, первоначально 0
 	$('.sameheight').each(function(){ // цикл "для каждой из колонок"
@@ -73,8 +75,10 @@ $(function() {
 	});
 
 	$('.p-menu__link').on('click', function() {
+		/*
 		$(this).parent().toggleClass('active');
 		$(this).parent().children('.p-menu__submenu').slideToggle(200);
+		*/
 		return false;
 	});
 
@@ -115,6 +119,39 @@ $(function() {
 
 	if ($(window).width() < 992) {
 		$('.p-content__presentimg').attr('src', 'img/present-mob.png');
+	}
+
+
+	if ($(window).width() >= 992) {
+		$('.h-menutoggle__link').on('click', function() {
+			$('.h-menutoggle__item').removeClass('active');
+			$(this).parent().addClass('active');
+			var activemenu = $(this).parent().attr('name');
+			$('.h-menutoggle__right').hide();
+			$('.' + activemenu).show();
+			return false;
+		});
+		$('.h-menu__link').hover(function() {
+			var activemenu = $(this).parent().attr('name');
+			$('.h-menutoggle__item').removeClass('active');
+			$('.h-menutoggle__item[name="' + activemenu + '"] .h-menutoggle__link').trigger('click');
+			$('.h-menutoggle__right').hide();
+			$('.' + activemenu).show();
+		}, function() {});
+
+		$('.header__h-menu').hover(function() {
+			$(this).children('.h-menutoggle').show();
+		}, function() {
+			$(this).children('.h-menutoggle').hide();
+		});
+
+		$('.h-menu__link').on('click', function() {
+			return false;
+		});
+		$('.h-menutoggle__close').on('click', function() {
+			$('.h-menutoggle').hide();
+			return false;
+		});
 	}
 
 });
